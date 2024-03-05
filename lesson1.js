@@ -25,3 +25,14 @@ function printPersonDetails({ name, age } = person) {
 }
 
 printPersonDetails(person); // Вывод: Name: Alice, Age: 30
+
+//4 Установите значение по умолчанию для свойства year которого нет в объекте car
+//выведите в консоль его
+
+const car = { brand: "Toyota", model: "Camry" };
+
+
+const { brand, model, year = 2022 } = car;
+console.log(brand);
+console.log(model);
+console.log(year);

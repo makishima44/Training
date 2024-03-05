@@ -15,3 +15,13 @@ const fruits = ["apple", "banana", "orange"];
 const [, secondFruit, thirdFruit] = fruits;
 console.log(secondFruit);
 console.log(thirdFruit);
+
+//3 Использовать деструктуризацию в параметрах функции
+
+const person = { name: "Alice", age: 30 };
+
+function printPersonDetails({ name, age } = person) {
+  console.log(`Name: ${name}, Age: ${age}`);
+}
+
+printPersonDetails(person); // Вывод: Name: Alice, Age: 30

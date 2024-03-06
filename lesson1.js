@@ -31,8 +31,21 @@ printPersonDetails(person); // Вывод: Name: Alice, Age: 30
 
 const car = { brand: "Toyota", model: "Camry" };
 
-
 const { brand, model, year = 2022 } = car;
 console.log(brand);
 console.log(model);
 console.log(year);
+
+//5 Извлечь значения из массива объектов
+//и вывести их в консоль
+
+const students = [
+  { name: "Alex", grade: "A" },
+  { name: "Emma", grade: "B" },
+  { name: "Chris", grade: "C" },
+];
+
+const [{ name: student1 }, , { name: student3 }] = students;
+
+console.log(student1);
+console.log(student3);

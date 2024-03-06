@@ -49,3 +49,18 @@ const [{ name: student1 }, , { name: student3 }] = students;
 
 console.log(student1);
 console.log(student3);
+
+//6 Установите значение по умолчанию для свойства age которого нет в объекте person
+// и переименовать переменные, чтобы достать значение с свойства firstName
+//и вывести результат в консоль
+
+const person2 = { firstName: "Max", lastName: "Johnson" };
+
+const { firstName: name1, lastName: name2, age2 = 25 } = person2;
+
+const firstName = "first Name: Nina";
+const lastName = "last Name: Ivanov";
+
+console.log(name1); // 'Max'
+console.log(name2); // 'Johnson'
+console.log(age2); // 25 (значение по умолчанию)

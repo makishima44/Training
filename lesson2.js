@@ -56,7 +56,7 @@ let todoList2 = ["Погулять с собакой", "Сходить в маг
 const todoList3 = todoList1.concat(todoList2);
 console.log("Общий список задач: " + todoList3.join(" "));
 
-//6  filter:
+// 6  filter:
 //Отфильтровать активных пользователей (isActive === true)
 
 let users3 = [
@@ -72,3 +72,16 @@ let activeUsers = users3.filter((user) => {
 });
 console.log(activeUsers);
 
+// 7 find:
+// Поиск юзера по имени Charlie:
+
+let users4 = [
+  { id: 1, name: "Alice", age: 28, isActive: true },
+  { id: 2, name: "Bob", age: 35, isActive: false },
+  { id: 3, name: "Charlie", age: 22, isActive: true },
+  { id: 4, name: "David", age: 40, isActive: true },
+  { id: 5, name: "Eva", age: 32, isActive: false },
+];
+
+let foundUser = users4.find((user) => user.name === "Charlie");
+console.log(foundUser);

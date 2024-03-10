@@ -29,3 +29,14 @@ let users2 = [
 
 let sortUsers = users2.sort((a, b) => a.age - b.age);
 console.log(sortUsers);
+
+//3
+let events = [
+  { name: "Event 1", date: new Date("2024-03-08T10:30:00") },
+  { name: "Event 2", date: new Date("2024-03-09T14:00:00") },
+  { name: "Event 3", date: new Date("2024-03-07T09:00:00") },
+];
+
+let sortEvents = events.sort((a, b) => a.date - b.date);
+console.log(sortEvents);
+

@@ -85,3 +85,16 @@ let users4 = [
 
 let foundUser = users4.find((user) => user.name === "Charlie");
 console.log(foundUser);
+
+// 8 includes:
+// Предположим, у вас есть приложение для учета товаров в магазине, и вам нужно проверить, есть ли определенный товар в наличии с использованием метода includes().
+
+let inventory = ["Футболка", "Джинсы", "Кроссовки", "Рюкзак", "Часы"];
+//Что надо найти:
+let itemToCheck = "Кроссовки";
+
+if (inventory.includes(itemToCheck)) {
+  console.log("Кроссовки есть в наличии");
+} else {
+  console.log("Товара нет на складе");
+}

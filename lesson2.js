@@ -46,3 +46,13 @@ console.log(sortEvents);
 let tasksString = "Помыть посуду, Погулять с собакой, Сделать покупки";
 let tasksArray = tasksString.split(",");
 console.log(tasksArray);
+
+//4 Объединение используя concat:
+//Предположим, у вас есть приложение для управления списками задач, и вы хотите объединить два списка задач в один для удобного отображения на странице.
+
+let todoList1 = ["Покормить кота", "Помыть посуду", "Сделать уроки"];
+let todoList2 = ["Погулять с собакой", "Сходить в магазин", "Позвонить маме"];
+
+const todoList3 = todoList1.concat(todoList2);
+console.log("Общий список задач: " + todoList3.join(" "));
+

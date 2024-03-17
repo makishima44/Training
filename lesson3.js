@@ -27,3 +27,23 @@ function factorial(number) {
   }
   return result;
 }
+
+//3)⦁	Реализуйте функцию fib(), возвращающую n-ное число Фибоначчи.
+
+function fib1(number) {
+  if (number <= 1) {
+    return number;
+  }
+
+  let prevPrev = 0;
+  let prev = 1;
+  let current;
+
+  for (let i = 2; i <= number; i++) {
+    current = prev + prevPrev;
+    prevPrev = prev;
+    prev = current;
+  }
+
+  return current;
+}

@@ -47,3 +47,16 @@ function fib1(number) {
 
   return current;
 }
+
+//4)⦁	Реализуйте функцию isSorted(), которая возвращает true или false в зависимости о того, отсортирован ли переданный ей числовой массив.
+
+function isSorted(numArr) {
+  let sortArr = numArr.slice().sort((a, b) => a - b);
+  for (let i = 0; i < numArr.length; i++) {
+    if (numArr[i] !== sortArr[i]) {
+      return false;
+    }
+  }
+  return true;
+}
+

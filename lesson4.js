@@ -24,3 +24,13 @@ const users = {
 const userArray = Object.values(users);
 const usersOver25 = userArray.filter((u) => u.age > 25).map((u) => u.name);
 console.log(usersOver25);
+
+//3)У вас есть два массива с числами. Ваша задача - найти пересечение элементов этих массивов.
+
+//Исходные массивы
+
+const array1 = [1, 2, 3, 4, 5];
+const array2 = [4, 5, 6, 7, 8];
+
+const intersection = array1.filter((el) => array2.includes(el));
+console.log(intersection)
